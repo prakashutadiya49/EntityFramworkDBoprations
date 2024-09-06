@@ -1,14 +1,24 @@
 [
   {
-    "ContainingType": "EFDBoprationAPI.Controller.CurrencyController",
-    "Method": "GetlanguageData",
-    "RelativePath": "Currency",
+    "ContainingType": "EFDBoprationAPI.Controllers.LanguageControler",
+    "Method": "GetLanguageData",
+    "RelativePath": "API-AvaiableLanguageBooks",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [],
-    "EndpointName": "GetLanguageData"
+    "EndpointName": ""
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controller.CurrencyController",
+    "Method": "GetlanguageData",
+    "RelativePath": "API/CurrenciesDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "EFDBoprationAPI.Controllers.WeatherForecastController",

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 //implemnt action method
 namespace EFDBoprationAPI.Controller
 {
-    [Route ("[controller]")]
+    [Route ("API/CurrenciesDetails")]
     [ApiController]
     public class CurrencyController : ControllerBase
     {
@@ -17,7 +17,7 @@ namespace EFDBoprationAPI.Controller
 
         //this is a action method:
 
-        [HttpGet(Name ="GetLanguageData")]
+        [HttpGet("")]
         public IActionResult GetlanguageData()
         {
             /*

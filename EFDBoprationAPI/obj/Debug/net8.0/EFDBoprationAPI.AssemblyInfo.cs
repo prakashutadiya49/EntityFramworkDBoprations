@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EFDBoprationAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a425a6bfff8f32884e6f28686cb506903eb7687b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6873beaa11cdfb6c0d8808635097a6cf7efff6a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("EFDBoprationAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EFDBoprationAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
