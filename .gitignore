@@ -1,1 +1,21 @@
+
+# Ignore Visual Studio directories and files
 .vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build directories
+bin/
+obj/
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore MacOS Finder files
+.DS_Store
+
+# Ignore Windows thumbnail cache
+Thumbs.db

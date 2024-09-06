@@ -31,6 +31,7 @@ namespace EFDBoprationAPI.Controller
             var LanguageTableData=this.appdbcontext.Language.ToList();
 
             return Ok(LanguageTableData);
+            
         }
     }
 }
