@@ -1,14 +1,230 @@
 [
   {
     "ContainingType": "EFDBoprationAPI.Controllers.LanguageControler",
-    "Method": "GetLanguageData",
-    "RelativePath": "API-AvaiableLanguageBooks",
+    "Method": "GetLanguageDataAsync",
+    "RelativePath": "API-AvaiableLanguageBooks/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.LanguageControler",
+    "Method": "GetBypassingInQueryAsync",
+    "RelativePath": "API-AvaiableLanguageBooks/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "discription",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.LanguageControler",
+    "Method": "GetbymultipleparaData",
+    "RelativePath": "API-AvaiableLanguageBooks/{name}/{discription}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "discription",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.LanguageControler",
+    "Method": "GetSpacificIDSData",
+    "RelativePath": "API-AvaiableLanguageBooks/allenteridsdata",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Ids",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.LanguageControler",
+    "Method": "GetSpacificIDSData",
+    "RelativePath": "API-AvaiableLanguageBooks/allentertitlesdata",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "titles",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.LanguageControler",
+    "Method": "GetspacificcolumsData",
+    "RelativePath": "API-AvaiableLanguageBooks/GetSpacifiColumnDatTransfer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Ids",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.BookController",
+    "Method": "UpdateBookWithSingleQuery",
+    "RelativePath": "api/Book",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DbOperationsWithEFCoreApp.Data.Book",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.BookController",
+    "Method": "UpdateBook",
+    "RelativePath": "api/Book/{bookId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "DbOperationsWithEFCoreApp.Data.Book",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.BookController",
+    "Method": "DeleteBookByIdAsync",
+    "RelativePath": "api/Book/{bookId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.BookController",
+    "Method": "AddBookWithAuthor",
+    "RelativePath": "api/Book/AddBookWithauthor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookwithauthor",
+        "Type": "DbOperationsWithEFCoreApp.Data.Book",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.BookController",
+    "Method": "AddnewBooks",
+    "RelativePath": "api/Book/Addmultiplebooks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "models",
+        "Type": "System.Collections.Generic.List\u00601[[DbOperationsWithEFCoreApp.Data.Book, EFDBoprationAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.BookController",
+    "Method": "AddNewBook",
+    "RelativePath": "api/Book/AddSinglebook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DbOperationsWithEFCoreApp.Data.Book",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.BookController",
+    "Method": "UpdateBookInBulk",
+    "RelativePath": "api/Book/bulk",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [],
-    "EndpointName": ""
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EFDBoprationAPI.Controllers.BookController",
+    "Method": "DeleteBooksinBulkAsync",
+    "RelativePath": "api/Book/bulk",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "EFDBoprationAPI.Controller.CurrencyController",

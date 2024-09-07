@@ -27,9 +27,9 @@ namespace DbOperationsWithEFCoreApp.Data
         public int LanguageId { get; set; }
 
         [Required]
-        public int? AuthorId { get; set; }
+        //public int? AuthorId { get; set; }
 
         public Language? Language { get; set; }
-        public Author? Author { get; set; }
+        //public Author? Author { get; set; }
     }
 }

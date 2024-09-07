@@ -59,11 +59,13 @@ namespace EFDBoprationAPI.Data
 
         public DbSet<Language> Language { get; set; }
 
-        public DbSet<Author> Author { get; set; }
+        //public DbSet<Author> Author { get; set; }
 
         public DbSet<BookPrice> BookPrice { get; set; }
 
         public DbSet<Currency> Currency { get; set; }
+
+        public DbSet<languagedatatransfertable> languagedatatransfertable {  get; set; }
 
 
     }

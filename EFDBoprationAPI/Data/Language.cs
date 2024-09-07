@@ -13,15 +13,12 @@ namespace DbOperationsWithEFCoreApp.Data
     {
         public int Id { get; set; }
 
-        [Required]
         [MaxLength(50)]
         public string Title { get; set; }
 
-        [Required]
         [MaxLength(100)]
         public string Description { get; set; }
 
-
-        public ICollection<Book> Book { get; set; }
+        public ICollection<Book>? Book { get; set; }
     }
 }
